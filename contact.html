@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Vitinha | Votre Avis</title>
+    <link rel="stylesheet" href="style-tp2.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">VITINHA<span>17</span></div>
+        <ul id="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="biographie.html">Bio</a></li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="contact.html" class="active">Avis</a></li>
+        </ul>
+    </nav>
+    <header class="hero"><h1>Votre <span class="highlight">Avis</span> compte !</h1></header>
+    <div class="main-container">
+        <div style="text-align:center; margin-bottom: 20px;"><img src="enveloppe.jpg" style="width:60px;"></div>
+        <form class="avis-form">
+            <div class="form-group"><label>Votre Pseudo :</label><input type="text" placeholder="Pseudo" required></div>
+            <div class="form-group">
+                <label>Note sur 5 :</label>
+                <select>
+                    <option>⚽⚽⚽⚽⚽ Excellent</option>
+                    <option>⚽⚽⚽⚽ Très Bien</option>
+                    <option>⚽⚽⚽ Bien</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Message :</label><textarea rows="5" placeholder="Votre avis sur le site..."></textarea></div>
+            <button type="submit" class="cta-button" style="width:100%; border:none; cursor:pointer;">Envoyer mon avis</button>
+        </form>
+    </div>
+</body>
+</html>

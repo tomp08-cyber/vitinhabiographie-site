@@ -1,0 +1,53 @@
+/* Base et Navigation */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; padding: 0; line-height: 1.6; background-color: #ecf0f1; 
+}
+
+#navbar { 
+    background: #001C39; color: white; display: flex; 
+    justify-content: space-between; padding: 15px 50px; align-items: center; 
+}
+
+#nav-links { list-style: none; display: flex; }
+#nav-links li { margin-left: 20px; }
+#nav-links a { color: white; text-decoration: none; font-weight: bold; }
+#nav-links a.active { border-bottom: 2px solid #D7162C; }
+
+/* Hero Section */
+.hero { background: #001C39; color: white; padding: 60px 20px; text-align: center; }
+.highlight { color: #D7162C; }
+.cta-button { 
+    background: #D7162C; color: white; padding: 10px 20px; 
+    text-decoration: none; border-radius: 5px; display: inline-block; 
+}
+
+/* Containers */
+.main-container { 
+    padding: 20px; max-width: 900px; margin: 30px auto; 
+    background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+/* Grid et News */
+.news-container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+.section-title { text-align: center; color: #001C39; margin-bottom: 30px; }
+.news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.news-card { background: #fff; padding: 20px; border-left: 5px solid #D7162C; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+.news-card:hover { transform: translateY(-5px); }
+
+/* Stats */
+.stats-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.stats-table th, .stats-table td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+.stats-table th { background-color: #001C39; color: white; }
+.mini-logo { width: 25px; vertical-align: middle; margin-right: 10px; }
+.icon-stat { width: 20px; vertical-align: middle; margin-right: 5px; }
+
+/* Bio */
+.profile-img { width: 100%; max-width: 400px; border-radius: 10px; display: block; margin: 0 auto 20px; }
+.titre-chapitre { font-weight: bold; font-size: 1.5rem; color: #001C39; border-bottom: 2px solid #D7162C; display: inline-block; margin-bottom: 15px; }
+.MOT-CLE { font-weight: bold; color: #D7162C; }
+
+/* Formulaire */
+.form-group { margin-bottom: 20px; text-align: left; }
+.form-group label { display: block; font-weight: bold; color: #001C39; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd; }
